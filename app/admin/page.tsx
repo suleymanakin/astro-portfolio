@@ -51,7 +51,7 @@ export default async function AdminPage() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {images.map((image) => (
+                                {images.map((image: { id: string; title: string; imageUrl: string; description: string }) => (
                                     <tr key={image.id} className="border-b border-gray-100 hover:bg-gray-50">
                                         <td className="py-3 px-4">
                                             {/* eslint-disable-next-line @next/next/no-img-element */}
